@@ -29,41 +29,41 @@
             <div class="w-full rounded-lg sm:max-w-md xl:p-0 bg-pink-500/80 shadow-2xl">
                 <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
                     <h1 class="text-xl font-bold leading-tight tracking-tight md:text-2xl text-white">
-                        Sign in to your account
+                        Sign up for your account
                     </h1>
-                    <form class="space-y-4 md:space-y-6" action="#">
+                    <form class="space-y-4 md:space-y-6 border-transparent " action="#">
+                        <div>
+                            <label for="cname" class="block mb-2 text-sm  font-medium text-white">Your name</label>
+                            <input type="text" name="name" id="cname" class="bg-gray-50 hover:shadow-lg hover:shadow-white/50 focus:shadow-xl border-transparent focus:border-transparent focus:shadow-purple-600 text-sm rounded-lg block w-full p-2.5 bg-white/90 text-gray-900 " placeholder="name@company.com" required="">
+                        </div>
                         <div>
                             <label for="email" class="block mb-2 text-sm font-medium text-white">Your email</label>
-                            <input type="email" name="email" id="email" class="bg-gray-50 hover:shadow-lg hover:shadow-white/50 focus:shadow-xl border-transparent focus:border-transparent focus:shadow-purple-600 text-sm rounded-lg block w-full p-2.5 bg-white/90 text-gray-900 " placeholder="name@company.com" required="">
+                            <input type="email" name="email" id="email" class="bg-gray-50 hover:shadow-lg hover:shadow-white/50 focus:shadow-xl border-transparent focus:border-transparent focus:shadow-purple-600 text-sm rounded-lg block w-full p-2.5 bg-white/90 text-gray-900 " placeholder="your name" required="">
                         </div>
                         <div>
                             <label for="password" class="block mb-2 text-sm font-medium text-white">Password</label>
                             <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 hover:shadow-lg hover:shadow-white/50 focus:shadow-xl border-transparent focus:border-transparent focus:shadow-purple-600 text-sm rounded-lg block w-full p-2.5 bg-white/90 text-gray-900 " required="">
                         </div>
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-start">
-                                <div class="flex items-center h-5">
-                                  <input id="remember" aria-describedby="remember" type="checkbox" class="w-4 h-4 bg-gray-50 border sm:text-sm rounded-lg border-primary-600 block p-2.5 bg-white/90 text-gray-900 ">
-                                </div>
-                                <div class="ml-3 text-sm">
-                                  <label for="remember" class="text-white/90 ">Remember me</label>
-                                </div>
-                            </div>
-                            <a href="#" class="text-sm font-medium text-white/90 hover:underline ">Forgot password?</a>
+                        <div>
+                            <label for="cpassword" class="block mb-2 text-sm font-medium text-white">Conform Password</label>
+                            <input type="password" name="password" id="cpassword" placeholder="••••••••" class="bg-gray-50 hover:shadow-lg hover:shadow-white/50 focus:shadow-xl border-transparent focus:border-transparent focus:shadow-purple-600 text-sm rounded-lg block w-full p-2.5 bg-white/90 text-gray-900 " required="">
                         </div>
-                        <button type="submit" id="signinf" class="w-full text-white text-lg hover:underline-offset rounded-lg px-5 py-2.5 text-center hover:scale-105 transform transition-transform duration-200 "><b>Sign in</b></button>
-                        
-                        <p class="text-sm font-light text-white">
-                            Don’t have an account yet? <a href="signup.html" class="font-medium px-10 text-primary-500 hover:underline">Sign up</a>
-                            <button onclick="window.history.back()" class="font-bold px-2 text-primary-600 hover:underline ">Go Back</button>
-
-                        </p>
+                       <div>
+                        <button type="submit" class="w-full text-white text-lg hover:underline-offset rounded-lg px-5 py-2.5 text-center hover:scale-105 transform transition-transform duration-200 "><b>Sign up</b></button>
+                       </div> 
+                       <p class="text-sm font-light text-white">
+                        already have a account? <a href="login.html" class="font-medium px-10 text-primary-500 hover:underline">Sign in</a>
+                        <button onclick="window.history.back()" class="font-bold px-2 text-primary-600 hover:underline ">Go Back</button>
+            
+                    </p>
                         
                     </form>
                 </div>
-            </div>
+            </div></div>
             
-        </div>
+                    </div>
+            
+            
       </section> 
       <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
